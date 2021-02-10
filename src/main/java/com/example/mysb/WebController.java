@@ -9,6 +9,8 @@ public class WebController {
     @GetMapping("/")
     @ResponseBody
     public String main() {
-        return "<a href=\"https://google.com\">Google</a>";
+        String html = "<a href=\"https://google.com\">Google</a>";
+        html += "<a href=\"https://11st.co.kr\">11st</a>";
+        return html;
     }
 }
